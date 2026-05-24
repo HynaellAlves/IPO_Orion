@@ -1,35 +1,21 @@
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
+  /*OBS: Incluir variáveis específicas da página */
+  overflow-y: auto;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  /* OBS: Verificar a melhor opção vertical justify-content: center; */
 }
 
 .main {
   display: flex;
   flex: 1;
   width: 100%;
-  max-width: 800px;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+  align-items: center;
+  /* OBS: Analisar depois justify-content: space-between; */
 }
-
 
 /*@media (prefers-color-scheme: dark) {
   .logo {
