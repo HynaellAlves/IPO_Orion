@@ -1,14 +1,14 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #402E32;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #402E32;
+    --foreground: #FFFFFF;
   }
-}
+}*/
 
 html {
   height: 100%;
@@ -21,12 +21,13 @@ body {
 }
 
 body {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  min-height: 100%;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Georgia, 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

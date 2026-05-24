@@ -1,17 +1,29 @@
+// #OBS: Verificar o que essa linha está importando
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
+// Importando fontes do projeto
+import { Poppins, Nunito } from "next/font/google";
+
+// Importando Componentes
+import { Header } from "@/components/shared/header/Header";
+
+// Folha de estilo global do projeto
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Incorporando os objetos de fonte e definindo suas variáveis
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunito = Nunito({
+  variable: "--font-nunito",
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
+// Definindo os Metadados do projeto
 export const metadata: Metadata = {
   title: "Instituto Profissional Orion",
   description: "Instituição de Ensino Profissional Orion",
@@ -23,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="pt-br" className={`${nunito.variable} ${poppins.variable}`}>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }
