@@ -5,6 +5,9 @@
   flex: 1;
   flex-direction: column;
   align-items: center;
+  background:
+    linear-gradient(#ffffffc7, #ffffffe1),
+    url("/backgrounds/background_orion_circles.svg") center/cover;
   /* OBS: Verificar a melhor opção vertical justify-content: center; */
 }
 
@@ -24,11 +27,11 @@
 }
 
 .page::-webkit-scrollbar-track {
-  background: #1e1e1e;
+  background: #402E32;
 }
 
 .page::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #ffffff;
 }
 
 /*@media (prefers-color-scheme: dark) {
