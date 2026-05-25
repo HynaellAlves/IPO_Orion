@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`${nunito.variable} ${poppins.variable}`}>
       <body>
-        <Header/>
+        <Header src_image_logo="/Orion.png"/>
         {children}
       </body>
     </html>

@@ -1,6 +1,23 @@
 :root {
+/* Definição de Variáveis Globais de estilo */
+
+  /* Cores de Fundos */
   --background: #ffffff;
-  --foreground: #402E32;
+  --foreground: #402e32;
+
+/* Famílias de fonte */
+  --font-family-title: var(--font-poppins);
+  --font-family-text: var(--font-nunito);
+
+  /* Cores de fontes */
+
+  /* Primárias */
+  --font-color-title: #402e32;
+  --font-color-subtitle: #402e32;
+  --font-color-text: #402e32;
+
+  /* Alternativas */
+  --font-color-text-alternative: #FFFFFF;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -27,7 +44,7 @@ body {
   min-height: 100%;
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-poppins), Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-poppins), Georgia, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

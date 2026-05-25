@@ -1,5 +1,4 @@
 .header {
-  position: fixed;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -8,14 +7,13 @@
   width: 100%;
   height: 80px;
   max-height: 80px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .content_logo_main {
-  width: 250px;
-  height: 100%;
+  height: 80%;
   max-width: 250px;
-  max-height: 100%;
+  max-height: 80%;
 }
 
 .image_logo_main {
@@ -26,9 +24,9 @@
 
 .content_options_header {
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  flex: 1;
   height: 100%;
 }
