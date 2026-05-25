@@ -1,4 +1,4 @@
-import styles from "./section.module.css";
+import styles from "./Section.module.css";
 
 interface propsSection {
   children: React.ReactNode;
