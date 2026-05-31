@@ -9,15 +9,25 @@
   --font-family-title: var(--font-poppins);
   --font-family-text: var(--font-nunito);
 
-  /* Cores de fontes */
-
-  /* Primárias */
+  /* Cores de fontes Primárias*/
   --font-color-title: #402e32;
   --font-color-subtitle: #402e32;
   --font-color-text: #402e32;
 
-  /* Alternativas */
-  --font-color-text-alternative: #FFFFFF;
+  /* Cores de fontes Alternativas*/
+  --font-color-title-alternative: #ffffff;
+  --font-color-subtitle-alternative: #ffffff;
+  --font-color-text-alternative: #ffffff;
+
+  /* Cores de Elementos UI/UX */
+  --color-button-primary: #402e32;
+  --color-button-alternative: #ffffff;
+  --color-input-primary: #ffffff;
+  --color-input-alternative: #402e32;
+
+  /* Tamanhos Pré-Definidos de Fontes */
+  --font-size-title: 1.5rem;
+  --font-size-text: 1rem;
 }
 
 /*@media (prefers-color-scheme: dark) {
@@ -28,6 +38,7 @@
 }*/
 
 html {
+  font-size: 16px;
   height: 100%;
 }
 
