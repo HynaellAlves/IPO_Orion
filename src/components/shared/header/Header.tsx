@@ -2,7 +2,7 @@
 import styles from "./Header.module.css";
 
 // Importando componentes de UI
-import Option from "@/components/UI/buttons/Header_options/Options";
+import Option from "@/components/UI/buttons/header_options/Options";
 
 // Objeto de interface para tipagem do componente
 interface propHeader {
