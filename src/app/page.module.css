@@ -34,6 +34,16 @@
   color: var(--font-color-title-alternative);
 }
 
+#confirm_button_hero {
+  background-color: var(--color-button-secondary);
+  transition: all 0.5s;
+}
+
+#confirm_button_hero:hover {
+  background-color: #b1372b;
+  color: var(--font-color-title-alternative);
+}
+
 /*@media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();

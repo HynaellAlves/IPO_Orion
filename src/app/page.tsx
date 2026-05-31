@@ -18,7 +18,7 @@ export default function Home() {
               <Title id={styles.title_movies}>
                 A decisão que define o seu futuro
               </Title>
-              <Confirm_button label="Comece agora" />
+              <Confirm_button id={styles.confirm_button_hero} label="Comece agora" />
             </div>
           </Movies>
         </Section>
