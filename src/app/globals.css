@@ -4,6 +4,7 @@
   /* Cores de Fundos */
   --background: #ffffff;
   --foreground: #402e32;
+  --foreground_alternative: #222222;
 
 /* Famílias de fonte */
   --font-family-title: var(--font-poppins);
