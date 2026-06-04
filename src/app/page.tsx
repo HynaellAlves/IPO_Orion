@@ -11,14 +11,23 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <div className={styles.content_letters_animation}>
+          <div className={styles.contain_letters}>
+            <h3>Instituto</h3>
+            <h3 id={styles.letter_orion}>Orion</h3>
+          </div>
+        </div>
         <Section data_type={1}>
           <Movies src="">
             <div className={styles.contain_movies_elements}>
-              <Play_button/>
+              <Play_button />
               <Title id={styles.title_movies}>
                 A decisão que define o seu futuro
               </Title>
-              <Confirm_button id={styles.confirm_button_hero} label="Comece agora" />
+              <Confirm_button
+                id={styles.confirm_button_hero}
+                label="Comece agora"
+              />
             </div>
           </Movies>
         </Section>

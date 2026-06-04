@@ -12,12 +12,42 @@
 }
 
 .main {
+  position: relative;
   display: flex;
   width: 100%;
   gap: 50px;
   flex-direction: column;
   align-items: center;
   /* OBS: Analisar depois justify-content: space-between; */
+}
+
+.content_letters_animation {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  z-index: 10;
+
+  h3 {
+    color: var(--font-color-title-alternative);
+    font-family: var(--font-family-title);
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+  #letter_orion {
+    color: #2f4858;
+  }
+}
+.contain_letters {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  animation: letter_animation_down 20s linear infinite;
 }
 
 .contain_movies_elements {
@@ -42,6 +72,16 @@
 #confirm_button_hero:hover {
   background-color: #b1372b;
   color: var(--font-color-title-alternative);
+}
+
+@keyframes letter_animation_down {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(220%);
+  }
 }
 
 /*@media (prefers-color-scheme: dark) {

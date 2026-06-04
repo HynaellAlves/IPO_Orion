@@ -1,12 +1,15 @@
-.section[data-type = "1"]{
+.section[data-type="1"] {
   display: flex;
   width: 100%;
   height: 100dvh;
 }
 
-.section[data-type = "2"]{
+.section[data-type="2"] {
   display: flex;
   width: 100%;
   height: 100dvh;
+  background:
+    linear-gradient(#402e32ee, #402e32ef),
+    url("/backgrounds/background_orion_alternative.svg") center/cover no-repeat;
   background-color: var(--foreground);
 }
