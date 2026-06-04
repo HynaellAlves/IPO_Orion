@@ -1,8 +1,7 @@
 .footer {
-  overflow: hidden;
   display: flex;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -72,5 +71,12 @@
     text-align: center;
     font-family: var(--font-family-title);
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content_options {
+    flex-direction: column;
+    row-gap: 10px;
   }
 }

@@ -1,5 +1,6 @@
 .options {
   display: flex;
+  min-width: max-content;
   flex-direction: row;
   align-items: center;
   gap: 5px;
