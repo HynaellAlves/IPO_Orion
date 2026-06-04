@@ -40,7 +40,7 @@ export default function RootLayout({
       <body>
         <Header src_image_logo="/Orion_logo_text.png"/>
         {children}
-        <Footer/>
+        <Footer src_image_logo="/Orion_logo_text.png"/>
       </body>
     </html>
   );
