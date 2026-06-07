@@ -37,8 +37,59 @@ export default function Home() {
         <Section data_type={1}>
           <h1>Seção 3</h1>
         </Section>
-        <Section data_type={2}>
-          <h1>Seção 4</h1>
+        <Section id={styles.micro_section} data_type={2}>
+          <div className={styles.content_micro_section}>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/school_icon.svg"
+                alt="Ícone de Escola"
+              />
+              +6.500 alunos formados
+            </Title>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/work_icon.svg"
+                alt="Ícone de Escola"
+              />
+              87% de empregabilidade
+            </Title>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/star_icon.svg"
+                alt="Ícone de Escola"
+              />
+              12 anos de atuação
+            </Title>
+          </div>
+          <div className={styles.content_micro_section}>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/school_icon.svg"
+                alt="Ícone de Escola"
+              />
+              +6.500 alunos formados
+            </Title>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/work_icon.svg"
+                alt="Ícone de Escola"
+              />
+              87% de empregabilidade
+            </Title>
+            <Title class={styles.micro_section_label}>
+              <img
+                className={styles.micro_section_icons}
+                src="/icons/star_icon.svg"
+                alt="Ícone de Escola"
+              />
+              12 anos de atuação
+            </Title>
+          </div>
         </Section>
         <Section data_type={1}>
           <h1>Seção 5</h1>
