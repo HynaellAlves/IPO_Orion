@@ -1,12 +1,12 @@
 :root {
-/* Definição de Variáveis Globais de estilo */
+  /* Definição de Variáveis Globais de estilo */
 
   /* Cores de Fundos */
   --background: #ffffff;
   --foreground: #402e32;
   --foreground_alternative: #222222;
 
-/* Famílias de fonte */
+  /* Famílias de fonte */
   --font-family-title: var(--font-poppins);
   --font-family-text: var(--font-nunito);
 
@@ -14,6 +14,7 @@
   --font-color-title: #402e32;
   --font-color-subtitle: #402e32;
   --font-color-text: #402e32;
+  --font-color-link: #efc260;
 
   /* Cores de fontes Alternativas*/
   --font-color-title-alternative: #ffffff;
@@ -23,7 +24,7 @@
   /* Cores de Elementos UI/UX */
   --color-button-primary: #402e32;
   --color-button-alternative: #ffffff;
-  --color-button-secondary: #F9F871;
+  --color-button-secondary: #f9f871;
   --color-input-primary: #ffffff;
   --color-input-alternative: #402e32;
 

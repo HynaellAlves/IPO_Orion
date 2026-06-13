@@ -24,7 +24,7 @@
   overflow: hidden;
   position: absolute;
   height: 100%;
-  right: 0;
+  left: 0;
   z-index: 10;
 
   h3 {
@@ -75,27 +75,36 @@
 
 #media_section {
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  height: auto;
 }
 
 .content_section_media {
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 90%;
-  gap: 50px;
+  height: 95%;
+  padding: 40px 20px;
+  gap: 20px;
   background:
     linear-gradient(#402e32ee, #402e32ef),
     url("/backgrounds/background_orion_alternative.svg") center/cover no-repeat;
   background-color: var(--foreground);
 
+  .contain_smartphones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
   #media_center {
-    width: 250px;
-    height: 500px;
+    width: 300px;
+    height: auto;
   }
 
   .media_button_section {
@@ -105,7 +114,7 @@
     align-items: center;
     width: 50px;
     height: 50px;
-    bottom: -4%;
+    bottom: -25px;
     border: none;
     outline: none;
     border-radius: 50%;
@@ -117,6 +126,29 @@
       width: 50%;
       height: 50%;
     }
+  }
+
+  .title_media_courses {
+    font-size: 3rem;
+    color: var(--font-color-title-alternative);
+  }
+
+  #title_media_courses {
+    margin: 100px 0;
+  }
+
+  .contain_card_courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .contain_card_courses[data-show="false"] {
+    display: none;
   }
 }
 
