@@ -14,7 +14,6 @@ import Confirm_button from "@/components/UI/buttons/confirm/Confirm_button";
 import Play_button from "@/components/UI/buttons/play_button/Play_button";
 
 export default function Home() {
-  
   const [onCourses, setOnCourses] = useState<boolean>(false);
 
   return (
@@ -54,36 +53,44 @@ export default function Home() {
               />
               <Smartphone src="/medias/instagram_1.png" />
             </div>
-            <Title
-              data-show={onCourses}
-              id={styles.title_media_courses}
-              class={styles.title_media_courses}
-            >
-              Conheça alguns de nossos cursos
-            </Title>
-            <div data-show={onCourses} className={styles.contain_card_courses}>
-              <Courses_main
-                icon={"/icons/student_personal_icon.svg"}
-                title={"Informática Profissional"}
-                text={
-                  "Aprenda informática na prática e prepare-se para os desafios profissionais"
-                }
-              />
-              <Courses_main
-                icon={"/icons/robot_icon.svg"}
-                title={"Robótica"}
-                text={
-                  "Desenvolva a criatividade e o raciocínio lógico criando soluções com robótica na prática."
-                }
-              />
-              <Courses_main
-                icon={"/icons/language_icon.svg"}
-                title={"Inglês Profissional"}
-                text={
-                  "Desenvolva a comunicação em inglês voltada para o ambiente de trabalho e oportunidades no mercado global."
-                }
-              />
-            </div>
+
+            {onCourses && (
+              <>
+                <Title
+                  id={styles.title_media_courses}
+                  class={styles.title_media_courses}
+                >
+                  Conheça alguns de nossos cursos
+                </Title>
+
+                <div
+                  data-show={onCourses}
+                  className={styles.contain_card_courses}
+                >
+                  <Courses_main
+                    icon={"/icons/student_personal_icon.svg"}
+                    title={"Informática Profissional"}
+                    text={
+                      "Aprenda informática na prática e prepare-se para os desafios profissionais"
+                    }
+                  />
+                  <Courses_main
+                    icon={"/icons/robot_icon.svg"}
+                    title={"Robótica"}
+                    text={
+                      "Desenvolva a criatividade e o raciocínio lógico criando soluções com robótica na prática."
+                    }
+                  />
+                  <Courses_main
+                    icon={"/icons/language_icon.svg"}
+                    title={"Inglês Profissional"}
+                    text={
+                      "Desenvolva a comunicação em inglês voltada para o ambiente de trabalho e oportunidades no mercado global."
+                    }
+                  />
+                </div>
+              </>
+            )}
             <button
               onClick={() => setOnCourses((prev) => !prev)}
               className={styles.media_button_section}

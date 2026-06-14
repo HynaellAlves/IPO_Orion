@@ -146,10 +146,6 @@
     gap: 50px;
     width: 100%;
   }
-
-  .contain_card_courses[data-show="false"] {
-    display: none;
-  }
 }
 
 #micro_section {
