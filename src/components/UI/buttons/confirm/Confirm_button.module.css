@@ -1,0 +1,12 @@
+.confirm_button{
+  max-width: 400px;
+  background-color: var(--color-button-primary);
+  color: var(--font-color-title);
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-title);
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}

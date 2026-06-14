@@ -1,6 +1,12 @@
-.section{
+.section {
   display: flex;
   width: 100%;
-  min-height: 100%;
-  border: 1px solid black;
+  height: 100dvh;
+}
+
+.section[data-type="2"] {
+  background:
+    linear-gradient(#402e32ee, #402e32ef),
+    url("/backgrounds/background_orion_alternative.svg") center/cover no-repeat;
+  background-color: var(--foreground);
 }

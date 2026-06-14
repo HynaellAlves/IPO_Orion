@@ -1,0 +1,18 @@
+.smartphone{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: auto;
+  border-radius: 30px;
+  border: 5px solid #000000;
+  background-color: #FFFFFF;
+
+  .media_image{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

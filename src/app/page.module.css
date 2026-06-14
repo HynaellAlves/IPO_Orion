@@ -2,36 +2,205 @@
   /*OBS: Incluir variáveis específicas da página */
   overflow-y: auto;
   display: flex;
-  flex: 1;
+  min-height: 100dvh;
   flex-direction: column;
   align-items: center;
   background:
     linear-gradient(#ffffffc7, #ffffffe1),
-    url("/backgrounds/background_orion_circles.svg") center/cover;
-  /* OBS: Verificar a melhor opção vertical justify-content: center; */
+    url("/backgrounds/background_orion_circles.svg") center;
 }
 
 .main {
+  position: relative;
   display: flex;
   width: 100%;
-  height: 100%;
-  gap: 20px;
+  gap: 50px;
   flex-direction: column;
   align-items: center;
   /* OBS: Analisar depois justify-content: space-between; */
 }
 
-.page::-webkit-scrollbar {
-  width: 5px;
+.content_letters_animation {
+  overflow: hidden;
+  position: absolute;
   height: 100%;
+  left: 0;
+  z-index: 10;
+
+  h3 {
+    color: var(--font-color-title-alternative);
+    font-family: var(--font-family-title);
+    font-size: 3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+  #letter_orion {
+    color: #2f4858;
+  }
+}
+.contain_letters {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  animation: letter_animation_down 20s linear infinite;
 }
 
-.page::-webkit-scrollbar-track {
-  background: #402E32;
+.contain_movies_elements {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.page::-webkit-scrollbar-thumb {
-  background: #ffffff;
+#title_movies h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--font-color-title-alternative);
+}
+
+#confirm_button_hero {
+  background-color: var(--color-button-secondary);
+  transition: all 0.5s;
+}
+
+#confirm_button_hero:hover {
+  background-color: #b1372b;
+  color: var(--font-color-title-alternative);
+}
+
+#media_section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.content_section_media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+  padding: 40px 20px;
+  gap: 20px;
+  background:
+    linear-gradient(#402e32ee, #402e32ef),
+    url("/backgrounds/background_orion_alternative.svg") center/cover no-repeat;
+  background-color: var(--foreground);
+
+  .contain_smartphones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+  }
+  #media_center {
+    width: 300px;
+    height: auto;
+  }
+
+  .media_button_section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--foreground);
+
+    .media_button_icon {
+      transform: rotate(90deg);
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .title_media_courses {
+    font-size: 3rem;
+    color: var(--font-color-title-alternative);
+  }
+
+  #title_media_courses {
+    margin: 100px 0;
+  }
+
+  .contain_card_courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+}
+
+#micro_section {
+  overflow: hidden;
+  flex-direction: row;
+  max-height: 80px;
+}
+
+.content_micro_section {
+  overflow: hidden;
+  display: flex;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  justify-content: space-around;
+  animation: micro_section_animation 25s linear infinite;
+
+  h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    color: var(--font-color-text-alternative);
+  }
+}
+
+.micro_section_icons {
+  max-height: 24px;
+}
+
+@keyframes letter_animation_down {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(220%);
+  }
+}
+
+@keyframes micro_section_animation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .content_micro_section .micro_section_label {
+    font-size: var(--font-size-text);
+  }
 }
 
 /*@media (prefers-color-scheme: dark) {

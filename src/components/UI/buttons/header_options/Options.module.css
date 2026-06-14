@@ -1,0 +1,16 @@
+.options {
+  display: flex;
+  min-width: max-content;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  font-size: var(--font-size-text);
+}
+
+.icon_options {
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+}

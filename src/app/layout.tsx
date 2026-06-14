@@ -6,6 +6,7 @@ import { Poppins, Nunito } from "next/font/google";
 
 // Importando Componentes
 import { Header } from "@/components/shared/header/Header";
+import { Footer } from "@/components/shared/footer/Footer";
 
 // Folha de estilo global do projeto
 import "./globals.css";
@@ -37,8 +38,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={`${nunito.variable} ${poppins.variable}`}>
       <body>
-        <Header src_image_logo="/Orion.png"/>
+        <Header src_image_logo="/Orion_logo_text.png"/>
         {children}
+        <Footer src_image_logo="/Orion_logo_text_alternative.png"/>
       </body>
     </html>
   );
