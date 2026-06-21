@@ -104,10 +104,10 @@ export default function Home() {
         </Section>
         <Section id={styles.pillars_section} data_type={1}>
           <Title
-            // id={styles.title_pillars_section}
+            id={styles.title_pillars_section}
             class={styles.title_pillars_section}
           >
-            Pilares do Ensino
+            Pilares do Ensino Profissional
           </Title>
           <div className={styles.content_pillars_section}>
             <div className={styles.contain_pillars}>

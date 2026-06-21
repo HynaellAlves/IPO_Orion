@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Poppins, Nunito } from "next/font/google";
 
 // Importando o Eruda para testes
-import Eruda from "@/components/test/eruda/Eruda";
+//import Eruda from "@/components/test/eruda/Eruda";
 
 // Importando Componentes
 import { Header } from "@/components/shared/header/Header";
@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="pt-br" className={`${nunito.variable} ${poppins.variable}`}>
       <body>
         <Header src_image_logo="/Orion_logo_text.png" />
-        <Eruda />
+        {/* <Eruda />*/}
         {children}
         <Footer src_image_logo="/Orion_logo_text_alternative.png" />
       </body>
