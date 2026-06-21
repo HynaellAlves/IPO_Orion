@@ -20,6 +20,7 @@ export function Courses_main(props: propsCoursesMain) {
       </Title>
       <p className={styles.courses_main_text}>{props.text}</p>
       <span className={styles.courses_main_link}>Saiba mais</span>
+      <img className={styles.courses_main_icon_footer} src="/icons/star_icon.svg" alt="Ícone de Estrela" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 .courses_main {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -16,6 +17,10 @@
     img {
       max-width: 60%;
     }
+  }
+
+  .courses_main_icon_footer {
+    max-width: 10px;
   }
 
   .title_courses_main {
