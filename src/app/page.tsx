@@ -63,10 +63,7 @@ export default function Home() {
                   Conheça alguns de nossos cursos
                 </Title>
 
-                <div
-                  data-show={onCourses}
-                  className={styles.contain_card_courses}
-                >
+                <div className={styles.contain_card_courses}>
                   <Courses_main
                     icon={"/icons/student_personal_icon.svg"}
                     title={"Informática Profissional"}
@@ -92,18 +89,68 @@ export default function Home() {
               </>
             )}
             <button
-              onClick={() => setOnCourses((prev) => !prev)}
+              onClick={() => {
+                setOnCourses((prev) => !prev);
+              }}
               className={styles.media_button_section}
             >
               <img
+                data-show={onCourses}
                 className={styles.media_button_icon}
                 src="/icons/arrow_icon.svg"
               />
             </button>
           </div>
         </Section>
-        <Section data_type={1}>
-          <h1>Seção 3</h1>
+        <Section id={styles.pillars_section} data_type={1}>
+          <Title
+            id={styles.title_pillars_section}
+            class={styles.title_pillars_section}
+          >
+            Pilares do Ensino Profissional
+          </Title>
+          <div className={styles.content_pillars_section}>
+            <div className={styles.contain_pillars}>
+              <div className={styles.pillars} id={styles.pillar_1}>
+                <img
+                  className={styles.pillars_icons}
+                  src="/icons/academic_icon.svg"
+                  alt="Ícone de Estudante"
+                />
+              </div>
+              <div className={styles.pillars} id={styles.pillar_2}>
+                <img
+                  className={styles.pillars_icons}
+                  src="/icons/courses_alternative_icon.svg"
+                  alt="Ícone de Estudante"
+                />
+              </div>
+              <div className={styles.pillars} id={styles.pillar_3}>
+                <img
+                  className={styles.pillars_icons}
+                  src="/icons/star_light_icon.svg"
+                  alt="Ícone de Estudante"
+                />
+              </div>
+              <div className={styles.pillars} id={styles.pillar_4}>
+                <img
+                  className={styles.pillars_icons}
+                  src="/icons/student_icon.svg"
+                  alt="Ícone de Estudante"
+                />
+              </div>
+            </div>
+            <div className={styles.contain_pillars_text}>
+              {/* <div className={styles.pillars_bar} /> */}
+              <div className={styles.pillars_text}>
+                <Title id={styles.title}>Formação a mercado</Title>
+                <p className={styles.text}>
+                  Foco na prática, professores com experiência de mercado e
+                  cursos alinhados às exigências reais das empresas.
+                </p>
+              </div>
+            </div>
+          </div>
         </Section>
         <Section id={styles.micro_section} data_type={2}>
           <div className={styles.content_micro_section}>
