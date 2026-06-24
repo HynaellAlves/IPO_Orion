@@ -2,7 +2,9 @@
 
 import styles from "./page.module.css";
 
-import { useState } from "react";
+import { getCourses } from "@/services/courses";
+
+import { useEffect, useState } from "react";
 
 import { Movies } from "@/components/UI/movies/Movies";
 import { Section } from "@/components/shared/section/Section";
@@ -14,6 +16,14 @@ import Confirm_button from "@/components/UI/buttons/confirm/Confirm_button";
 import Play_button from "@/components/UI/buttons/play_button/Play_button";
 
 export default function Home() {
+  useEffect(() => {
+    const load = async () => {
+      const courses = await getCourses();
+      return courses;
+    };
+    console.log(load());
+  }, []);
+
   const [onCourses, setOnCourses] = useState<boolean>(false);
 
   return (

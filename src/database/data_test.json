@@ -1,0 +1,23 @@
+[
+  {
+    "id_courses": 1,
+    "icon": "/icons/robot_icon.svg",
+    "image": "",
+    "title": "Robótica",
+    "text": "Desenvolva a criatividade e o raciocínio lógico criando soluções com robótica na prática."
+  },
+  {
+    "id_courses": 2,
+    "icon": "/icons/language_icon.svg",
+    "image": "",
+    "title": "Inglês Profissional",
+    "text": "Desenvolva a comunicação em inglês voltada para o ambiente de trabalho e oportunidades no mercado global."
+  },
+  {
+    "id_courses": 3,
+    "icon": "/icons/student_personal_icon.svg",
+    "image": "",
+    "title": "Informática Profissional",
+    "text": "Aprenda informática na prática e prepare-se para os desafios profissionais"
+  }
+]
