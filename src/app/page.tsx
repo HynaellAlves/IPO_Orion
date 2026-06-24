@@ -40,7 +40,7 @@ export default function Home() {
           <Movies src="">
             <div className={styles.contain_movies_elements}>
               <Play_button />
-              <Title id={styles.title_movies}>
+              <Title id={styles.title_movies} class={styles.title_movies}>
                 A decisão que define o seu futuro
               </Title>
               <Confirm_button

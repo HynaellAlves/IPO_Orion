@@ -55,9 +55,15 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  .title_movies {
+    font-weight: 400;
+    font-size: 4rem;
+    color: var(--font-color-title-alternative);
+  }
 }
 
-#title_movies h1 {
+.title_movies {
   font-weight: 400;
   font-size: 4rem;
   color: var(--font-color-title-alternative);
@@ -201,7 +207,6 @@
 }
 
 #title_pillars_section {
-  width: 60%;
   padding: 10px 0;
   border-bottom: 1px solid #402e3241;
 }
@@ -312,7 +317,9 @@
 }
 
 #section_form_title {
-  padding: 2% 0;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #402e3241;
 }
 
 .content_section_form {
@@ -328,6 +335,7 @@
   flex-direction: column;
   width: 40%;
   max-width: 700px;
+  gap: 20px;
 }
 
 .contain_form_image {
