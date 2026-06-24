@@ -11,6 +11,7 @@ import { Section } from "@/components/shared/section/Section";
 import { Smartphone } from "@/components/UI/cards/card_smarphones/Smartphone";
 import { Courses_main } from "@/components/UI/cards/courses_main/Courses_main";
 
+import Input from "@/components/UI/inputs/input_form/input";
 import Title from "@/components/UI/title/Title";
 import Confirm_button from "@/components/UI/buttons/confirm/Confirm_button";
 import Play_button from "@/components/UI/buttons/play_button/Play_button";
@@ -51,7 +52,7 @@ export default function Home() {
         </Section>
 
         <Section id={styles.media_section} data_type={1}>
-          <Title class={styles.title_medias}>
+          <Title id={styles.title_medias} class={styles.title_medias}>
             Veja o dia a dia de quem estuda no Orion !
           </Title>
           <div className={styles.content_section_media}>
@@ -151,7 +152,6 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.contain_pillars_text}>
-              {/* <div className={styles.pillars_bar} /> */}
               <div className={styles.pillars_text}>
                 <Title id={styles.title}>Formação a mercado</Title>
                 <p className={styles.text}>
@@ -216,8 +216,42 @@ export default function Home() {
             </Title>
           </div>
         </Section>
-        <Section data_type={1}>
-          <h1>Seção 5</h1>
+        <Section id={styles.section_form} data_type={1}>
+          <Title
+            id={styles.section_form_title}
+            class={styles.section_form_title}
+          >
+            Deixe nosso time ajudar você a dar o próximo passo !
+          </Title>
+          <div className={styles.content_section_form}>
+            <form className={styles.form}>
+              <Input
+                id="name"
+                type={1}
+                label="Nome e Sobrenome"
+                placeholder="Digite seu nome para contato"
+              />
+              <Input
+                id="phone"
+                type={1}
+                label="Telefone Whatsapp"
+                placeholder="Digite seu telefone celular"
+              />
+              <Input
+                id="description"
+                type={4}
+                data-type={4}
+                label="Observações"
+                placeholder="Detalhes, considerações, horários, etc..."
+              />
+            </form>
+            <div className={styles.contain_form_image}>
+              <img
+                src="/medias/Orion_formulário_imagem_alternativo.png"
+                alt="Imagem da Orion no Formulário"
+              />
+            </div>
+          </div>
         </Section>
       </main>
     </div>

@@ -1,0 +1,40 @@
+.contain_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: min-content;
+}
+
+.input_labels {
+  font-family: var(--font-family-title);
+  color: var(--font-color-title);
+  font-weight: 600;
+}
+
+.inputs {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  max-height: 50px;
+  padding: 0 3%;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-text);
+  color: var(--font-color-text);
+  background: #ffffffb2;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.text_area {
+  min-width: 100%;
+  max-width: 600px;
+  min-height: 150px;
+  max-height: 200px;
+  padding: 0 3%;
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-text);
+  color: var(--font-color-text);
+  background: #ffffffb2;
+  border-radius: 10px;
+  border: 1px solid black;
+}
